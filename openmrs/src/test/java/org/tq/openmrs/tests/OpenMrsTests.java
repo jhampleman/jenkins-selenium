@@ -17,9 +17,10 @@ import org.tq.util.BaseClass;
 
 public class OpenMrsTests extends BaseClass{
 	 
+	
  
 	@Parameters({"username","password","serviceName"})
-	@Test 
+	@Test(enabled=false) 
 	public void verifyServiceTypeAvailable(String username,String password,String serviceName)
 	{
 		LoginPage lPage = new LoginPage(driver);
