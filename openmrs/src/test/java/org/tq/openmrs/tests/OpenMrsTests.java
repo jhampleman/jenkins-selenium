@@ -28,6 +28,7 @@ public class OpenMrsTests extends BaseClass{
 		ManageServiceTypesPage servicePage = new ManageServiceTypesPage(driver);
 		LogoutPage logoutPage = new LogoutPage(driver);
 		lPage.login(username,password);
+		System.out.println("login successful");
 		hPage.navigateToServiceTypes();
 		boolean result = servicePage.isServiceTypeAvailable(serviceName);
 		Assert.assertTrue(result);
