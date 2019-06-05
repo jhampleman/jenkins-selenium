@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Downloading the Code'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        'git clone "https://github.com/sudheer51/TQAug18.git"
+        
       }
     }
     
