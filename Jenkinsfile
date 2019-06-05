@@ -7,7 +7,7 @@ pipeline {
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         echo "Jenkins Workspace ${env.WORKSPACE}"
         bat "mvn -f openmrs clean"
-        bat "mvn -f openmrs test"
+        bat "mvn -f openmrs test -P QA"
         
       }
     } 
