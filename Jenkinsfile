@@ -5,7 +5,8 @@ pipeline {
       steps {
         echo 'Downloading the Code'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        bat 'mvn -f openmrs/pom.xml clean'
+        bat  ' git clone https://github.com/sudheer51/TQAug18.git'
+        bat  'mvn -f openmrs/pom.xml clean'
         
       }
     }
