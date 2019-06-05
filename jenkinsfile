@@ -1,0 +1,16 @@
+pipeline {
+  
+  stages {
+    stage('Download Code') {
+      steps {
+        echo 'Downloading the Code'
+        git clone "https://github.com/sudheer51/TQAug18.git"
+      }
+    }
+    stage('Execute Selenium Tests') {
+      steps {
+         
+      }
+    }
+  }
+}
