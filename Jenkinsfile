@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Downloading the Code'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        sh 'mvn -f openmrs/pom.xml clean'
+        bat 'mvn -f openmrs/pom.xml clean'
         
       }
     }
