@@ -4,10 +4,8 @@ pipeline {
     stage('Download Code') {
       steps {
         echo 'Downloading the Code'
-        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-        bat  'rmdir /S /Q TQAug18'
-        bat  'git clone https://github.com/sudheer51/TQAug18.git'
-        bat  'cd TQAug18/openmrs'
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
+        bat  'cd openmrs'
         bat  'mvn -f pom.xml clean'   
       }
     } 
