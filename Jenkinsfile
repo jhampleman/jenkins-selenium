@@ -6,7 +6,8 @@ pipeline {
         echo 'Downloading the Code'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
         echo "Jenkins Workspace ${env.WORKSPACE}"
-        bat  "${env.WORKSPACE}/openmrs/mvn clean"   
+        dir_path =   "${env.WORKSPACE}/openmrs"  
+        bat dir_path mvn clean
       }
     } 
   }
